@@ -85,7 +85,7 @@ for (let i = 0; i < inventory.length; i++) {
 for (let i = 0; i < carModels.length; i++) {
   for (let j = 1; j < carModels.length; j++) {
     if (carModels[j - 1].toUpperCase() > carModels[j].toUpperCase()) {
-      elemPlaceholder = carModels[j - 1]
+      let elemPlaceholder = carModels[j - 1]
       carModels[j - 1] = carModels[j]
       carModels[j] = elemPlaceholder
     }
